@@ -1,0 +1,22 @@
+.salary-text {
+    color: var(--primary-color) !important;
+}
+
+.career-card p {
+    color: var(--primary-color);
+}
+
+.detail-section {
+    color: var(--primary-color);
+}
+
+.detail-section ul li {
+    color: var(--primary-color);
+}
+
+.career-card .learn-more,
+.career-card .spin-again {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    background-color: transparent;
+}

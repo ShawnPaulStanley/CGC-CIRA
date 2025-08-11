@@ -1,0 +1,22 @@
+.companies-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 1rem 0 0;
+    text-align: center;
+}
+
+.companies-list li {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--primary-color);
+}
+
+@media screen and (max-width: 600px) {
+    .companies-list {
+        grid-template-columns: 1fr;
+    }
+}

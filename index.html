@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Career Spinner - Find Your Path!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/randomizer.css">
+    <link rel="stylesheet" href="css/career-card.css">
+    <link rel="stylesheet" href="css/career-card-fixes.css">
+    <link rel="stylesheet" href="css/career-card-companies.css">
+</head>
+<body>
+    <canvas id="particleCanvas"></canvas>
+    <div class="container">
+        <header>
+            <h1 class="glow-text">CIRA</h1>
+            <p class="glitch-text glow-text">Career Guidance Club</p>
+            <div class="description">
+                <p>Helping you find a job your mom can finally brag about</p>
+            </div>
+            <button id="startQuizButton" class="pixel-button start-quiz-button">Start Your Journey</button>
+        </header>
+
+        <main>
+            <div id="quizSection" class="quiz-section">
+                <div class="quiz-container pixel-border">
+                    <div id="questionContainer" class="question-container">
+                        <h2 id="questionText">Loading...</h2>
+                        <div id="answerOptions" class="answer-options">
+                            <!-- Options will be added dynamically -->
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div id="progressFill"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="randomizeSection" class="randomize-section">
+                <div class="randomizer-container pixel-border">
+                    <div class="cards-container" id="cardsContainer">
+                        <!-- Cards will be added dynamically -->
+                    </div>
+                    <div class="randomizer-controls">
+                        <button id="randomizeButton" class="spin-button pixel-button">REVEAL YOUR DESTINY</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="career-card" id="careerCard">
+                <div class="card-content">
+                    <h2 id="careerTitle"></h2>
+                    <div class="category" id="careerCategory"></div>
+                    
+                    <div class="details-grid">
+                        <div class="detail-section">
+                            <h3>Required Skills</h3>
+                            <ul id="skillsList"></ul>
+                        </div>
+                        
+                        <div class="detail-section">
+                            <h3>Common Tools</h3>
+                            <ul id="toolsList"></ul>
+                        </div>
+                        
+                        <div class="detail-section salary">
+                            <h3>Average Salary</h3>
+                            <p id="salaryINR"></p>
+                            <p id="salaryUSD"></p>
+                        </div>
+                    </div>
+
+                    <div class="fun-fact">
+                        <h3>Fun Fact</h3>
+                        <p id="funFact"></p>
+                    </div>
+ 
+                    <div class="companies">
+                        <h3>Example Companies</h3>
+                        <ul id="companiesList"></ul> 
+                    </div>
+                    <div class="actions">
+                        <a id="learnMore" href="#" target="_blank" class="learn-more">Learn More</a>
+                        <button id="spinAgain" class="spin-again">Spin Again</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/careers.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/randomizer.js"></script>
+    <script src="js/particles.js"></script>
+</body>
+</html>
