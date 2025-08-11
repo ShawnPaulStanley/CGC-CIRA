@@ -1,6 +1,6 @@
-# CGC-CIRA – Career Guidance Spinner
+# CGC-CIRA – Career Guidance Tool
 
-A fun, interactive “Spin the Wheel” web app that helps users discover exciting career paths.  
+A fun, interactive “Shuffle the Cards” web app that helps users discover exciting career paths.  
 Built with **HTML**, **CSS**, and **JavaScript**, it presents each profession’s required skills, tools, average salary, and a quirky fact—making career exploration both informative and engaging.
 
 ## 🎯 Features
