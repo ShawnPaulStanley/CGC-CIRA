@@ -32,7 +32,7 @@ class CareerRandomizer {
             card.innerHTML = `
                 <div class="card-content">
                     <div class="card-title">???</div>
-                    <div class="card-category">Loading...</div>
+                    <div class="card-category"></div>
                 </div>
             `;
             this.cardsContainer.appendChild(card);
@@ -215,3 +215,4 @@ window.addEventListener('load', () => {
     // Initialize with careers data
     window.careerRandomizer.initialize(careers);
 });
+
